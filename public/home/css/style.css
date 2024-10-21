@@ -1,0 +1,1255 @@
+body{
+    background-color: #D3D3D3;
+}
+.elipsis {
+    overflow: hidden;
+    text-overflow: clip;
+    line-height: 1.5;
+    max-height: calc(1.5em * 2); 
+    white-space: normal
+  }
+.elipsis:hover {
+    overflow: visible;
+  }
+.home-section{
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../images/homepict2.png);
+    width: 100%;
+    border-bottom-left-radius: 47px;
+    border-bottom-right-radius: 47px;
+}
+#menuhape{
+    transition: 1s ease;
+}
+.w-65{
+    width: 65% !important;
+}
+.bulet {
+    width: 265px;
+    height: 265px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bulet:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background-color: #d9534f; /* Ubah warna latar belakang saat hover */
+}
+
+.iken {
+    width: 50px;
+    transition: transform 0.3s;
+}
+
+.bulet:hover .iken {
+    transform: rotate(360deg); /* Efek rotasi pada gambar */
+}
+
+.kelas2{
+    position: relative;
+    left: 15%;
+}
+.kelas2 .col-md-8{
+    width: 50%;
+}
+.kelas3{
+    position: relative;
+    left: 20%;
+}
+.kelas3 .col-md-8{
+    width: 40%;
+}
+.kelas4{
+    position: relative;
+    left: 15%;
+}
+.kelas4 .col-md-8{
+    width: 50%;
+}
+.kelas5{
+    position: relative;
+    left: 1%;
+}
+.iken{
+    width: 50%;
+}
+.cs-section{
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../images/cspict.png);
+    width: 100%;
+    border-bottom-left-radius: 47px;
+    border-bottom-right-radius: 47px;
+}
+
+.logo{
+    background-color: #ffffff8f;
+    width: 130px;
+    height: 130px;
+}
+
+.bg-danger{
+    background-color: #9E0000 !important;
+}
+
+
+
+.btn-danger{
+    background-color: #9E0000 !important;
+    color: white;
+    --bs-btn-border-color: none;
+}
+
+.btn-danger:hover{
+    background-color: #7e1e1e !important;
+    --bs-btn-border-color: none;
+    color: white;
+}
+
+.th1{
+    color: #ffffff;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+    z-index: 10;
+}
+
+.isi-page{
+    height: 100%;
+}
+.isi-index-page{
+    height: 100%;
+    position: relative !important;
+    background-color: #D3D3D3;
+    overflow-x: hidden;
+}
+.isi1-page{
+    height: 100%;
+    background-color: #E9E9E9;
+    position: relative;
+}
+.isi1-page h6, p{
+    color: #696974;
+}
+
+
+
+.footer-page{
+    height: 100%;
+    background-size: cover; /* Sama dengan object-fit: cover */
+    background-position: center; /* Fokus pada bagian bawah gambar */
+    background-image: url(../images/footer.png);
+    width: 100%;
+    border-top-left-radius: 47px;
+    border-top-right-radius: 47px;
+}
+
+.overlay-footer{
+    background-color: #0000009d;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 47px;
+    border-top-right-radius: 47px;
+}
+.logofoot{
+    background-color: #ffffff8f;
+    width: 130px;
+    height: 130px;
+}
+.slider {
+    width: 80%;
+    margin: auto;
+}
+.slick-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+.slick-prev,
+.slick-next {
+    display: none;
+}
+
+/* Menambahkan tombol navigasi kustom */
+.custom-prev,
+.custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.custom-prev {
+    left: -40px;
+}
+
+.custom-next {
+    right: -30px;
+}
+
+/* Menggunakan Font Awesome untuk ikon kustom (opsional) */
+.custom-prev::before,
+.custom-next::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 20px;
+}
+.custom-prev::before {
+    content: '\f104'; /* Ikon panah kiri */
+}
+.custom-next::before {
+    content: '\f105'; /* Ikon panah kanan */
+}   
+.contact-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+}
+.form-section {
+    flex: 1;
+}
+.map-section {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+input, textarea {
+    border-radius: 20px;
+    padding: 15px;
+}
+
+
+@media(max-width:1921px) {
+    .home-section h1 {
+        font-size: 5rem;
+    }
+    #menuhape{
+        display: none !important;
+    }
+    .butt{
+        display: none;
+    }
+    .ohoh {
+        top: -5vh;
+        width: 15vh !important;
+        height: 7vh !important;
+        left: -6vh !important;
+        position: absolute;
+    }
+    .bungklus .btn-danger {
+        height: 4vh !important;
+    }
+    .kelas3 .col-md-8 {
+        width: 50%;
+    }
+    .kelas3 {
+        position: relative;
+        left: 18%;
+    }
+    .icon {
+        position: relative;
+        top: 14vh;
+    }
+    .home-section .btn-danger {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .home-section .fab{
+        font-size: 50px !important;
+    }
+    .cs-section .btn-danger {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .cs-section .fab{
+        font-size: 50px !important;
+    }
+    .logo {
+        left: 26px !important;
+        margin-left: 15px;
+    }
+    .kelas2 {
+        position: relative;
+        left: 10%;
+    }
+    .kelas4 {
+        position: relative;
+        left: 10%;
+    }
+    .overlay-footer{
+        height: 100%;
+    }
+    .logofoot{
+        left: 100vh;
+    }
+    .cs-section .col-md-3 {
+        margin-top: 43vh;
+    }
+    .icon {
+        position: relative;
+        top: 20vh;
+    }
+}
+
+@media(max-width:1781px) {
+    #menuhape{
+        display: none !important;
+    }
+    .butt{
+        display: none;
+    }
+    .home-section h1 {
+        font-size: 4rem;
+    }
+    .ohoh {
+        top: 6vh;
+        width: 16vh !important;
+        height: 8vh !important;
+        left: 1vh !important;
+        position: absolute;
+    }
+    .bungklus .btn-danger {
+        height: 6vh !important;
+    }
+    .icon {
+        position: relative;
+        top: 15vh;
+    }
+    .home-section .btn-danger {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .home-section .fab{
+        font-size: 50px !important;
+    }
+    .cs-section .btn-danger {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .cs-section .fab{
+        font-size: 50px !important;
+    }
+    .logo {
+        left: 26px !important;
+        margin-left: 15px;
+    }
+    .kelas2 {
+        position: relative;
+        left: 10%;
+    }
+    .kelas3 {
+        position: relative;
+        left: 10%;
+    }
+    .kelas4 {
+        position: relative;
+        left: 10%;
+    }
+    .overlay-footer{
+        height: 100%;
+    }
+    .logofoot{
+        left: 100vh;
+    }
+    .cs-section .col-md-3 {
+        margin-top: 43vh;
+    }
+    .icon {
+        position: relative;
+        top: -8vh;
+    }
+}
+
+@media(max-width:1367px) {
+    
+    .home-section h1 {
+        font-size: 3.5rem;
+    }
+    .home-section .btn-danger {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .home-section .fab {
+        font-size: 40px !important;
+    }
+    .cs-section .btn-danger {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .cs-section .fab {
+        font-size: 40px !important;
+    }
+    .icon {
+        position: relative;
+        top: 0vh;
+    }
+    .ohoh {
+        top: 6vh;
+        width: 12vh !important;
+        height: 6vh !important;
+        left: -17vh !important;
+        position: absolute;
+    }
+    .bungklus .btn-danger {
+        height: 5vh !important;
+    }
+    .card{
+        width: 95% !important;
+    }
+    .card2{
+        width: 95% !important;
+    }
+    .cs-section .col-md-3 {
+        margin-top: 43vh;
+    }
+    .kelas2 {
+        position: relative;
+        left: 15%;
+    }
+    .kelas3 {
+        position: relative;
+        left: 20%;
+    }
+    .kelas4 {
+        position: relative;
+        left: 15%;
+    }
+    .isi1-page .card{
+        width: 95% !important;
+    }
+    .isi1-page .card2{
+        width: 22% !important;
+    }
+    #menuhape{
+        display: none !important;
+    }
+    .butt{
+        display: none;
+    }
+}
+
+@media(max-width:1281px) {
+    .home-section h1 {
+        font-size: 3rem;
+    }
+    .ohoh {
+        top: 5vh;
+        width: 13vh !important;
+        height: 6vh !important;
+        left: -15vh !important;
+        position: absolute;
+    }
+    .home-section .btn-danger {
+        width: 70px !important;
+        height: 70px !important;
+    }
+    .home-section .fab {
+        font-size: 35px !important;
+    }
+    .cs-section .btn-danger {
+        width: 70px !important;
+        height: 70px !important;
+    }
+    .cs-section .fab {
+        font-size: 35px !important;
+    }
+    .kelas3 {
+        position: relative;
+        left: 20%;
+    }
+    .kelas2 .col-md-8 {
+        width: 45%;
+    }
+    .kelas2 {
+        position: relative;
+        left: 17%;
+    }
+    .kelas3 .col-md-8 {
+        width: 39%;
+    }
+    .kelas4 {
+        position: relative;
+        left: 20%;
+    }
+    .kelas4 .col-md-8 {
+        width: 40%;
+    }
+    .kelas5 {
+        position: relative;
+        left: 10%;
+    }
+    .kelas5 .col-md-8 {
+        width: 72%;
+    }
+
+}
+
+@media(max-width:1152px) {
+    .home-section .bg-danger{
+        width: 100px;
+    }
+    .ohoh {
+        top: 14vh;
+        width: 17vh !important;
+        height: 8vh !important;
+        left: -5vh !important;
+        position: absolute;
+    }
+    .home-section .btn-danger {
+        width: 55px !important;
+        height: 55px !important;
+    }
+    .home-section .fab {
+        font-size: 30px !important;
+    }
+    .cs-section .btn-danger {
+        width: 55px !important;
+        height: 55px !important;
+    }
+    .cs-section .fab {
+        font-size: 30px !important;
+    }
+    .icon {
+        position: relative;
+        top: -10vh;
+    }
+    .home-section h1 {
+        font-size: 2.5rem;
+    }
+    .bungklus .btn-danger {
+        height: 6vh !important;
+    }
+    .isi-index-page .fw-bold{
+        font-size: 2rem !important;
+    }
+    .electric-page h1{
+        font-size: 2.5rem !important;
+    }
+    .maintenance-page h1{
+        font-size: 2.5rem !important;
+    }
+    .mechanical-page h1{
+        font-size: 2.5rem !important;
+    }
+    .portofolio-page h1{
+        font-size: 2.5rem !important;
+    }
+    .profil-page h1{
+        font-size: 2.5rem !important;
+    }
+    .residental-page h1{
+        font-size: 2.5rem !important;
+    }
+    .space-page h1{
+        font-size: 2.5rem !important;
+    }
+    .bulet {
+        width: 170px !important;
+        height: 170px !important;
+    }
+    .api {
+        width: 44% !important;
+    }
+    .kelas5 .col-md-8 {
+        width: 63%;
+    }
+    .kelas5 {
+        position: relative;
+        left: 7%;
+    }
+    .kelas4 {
+        position: relative;
+        left: 13%;
+    }
+    .kelas4 .col-md-8 {
+        width: 53%;
+    }
+    .kelas3 .col-md-8 {
+        width: 50%;
+    }
+    .kelas3 {
+        position: relative;
+        left: 17%;
+    }
+    .kelas2 .col-md-8 {
+        width: 55%;
+    }
+    .kelas2 {
+        position: relative;
+        left: 13%;
+    }
+    .isi1-page .fw-bold{
+        font-size: 3rem !important;
+    }
+    .isi-index-page p {
+        font-size: 0.9rem !important;
+    }
+    .cs-section .col-md-3 {
+        margin-top: 43vh;
+    }
+    #menuhape{
+        display: none !important;
+    }
+    .butt{
+        display: none;
+    }
+}
+
+@media(max-width:1081px) {
+    .home-section h1 {
+        font-size: 2.2rem;
+    }
+    .ohoh {
+        top: 16vh;
+        width: 17vh !important;
+        height: 8vh !important;
+        left: -10vh !important;
+        position: absolute;
+    }
+    .icon {
+        position: relative;
+        top: -12vh;
+    }
+    .home-section h1 {
+        font-size: 2.5rem;
+    } 
+    .home-section .btn-danger {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .home-section .fab {
+        font-size: 28px !important;
+    }
+    .cs-section .btn-danger {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .cs-section .fab {
+        font-size: 28px !important;
+    }
+    .bungklus .btn-danger {
+        height: 6.5vh !important;
+    }
+    #menuhape{
+        display: none !important;
+    }
+    .butt{
+        display: none;
+    }
+    .kelas2 .col-md-8 {
+        width: 54%;
+    }
+    .kelas2 {
+        position: relative;
+        left: 13%;
+    }
+    .kelas3 .col-md-8 {
+        width: 45%;
+    }
+    .kelas3 {
+        position: relative;
+        left: 18%;
+    }
+    .kelas4 .col-md-8 {
+        width: 51%;
+    }
+    .kelas4 {
+        position: relative;
+        left: 16% !important;
+    }
+
+    .kelas5 {
+        position: relative;
+        left: 2%;
+    }
+}
+
+@media(max-width:992px) {
+    .home-section h1 {
+        font-size: 2rem;
+    }
+    .ohoh {
+        top: 16vh;
+        width: 16vh !important;
+        height: 7vh !important;
+        left: -6vh !important;
+        position: absolute;
+    }
+    .isi-index-page p {
+        font-size: 0.8rem !important;
+    }
+
+    .bulet {
+        width: 180px !important;
+        height: 180px !important;
+    }
+    .electric-page h1 {
+        font-size: 2.2rem !important;
+    }
+    .maintenance-page h1 {
+        font-size: 2.2rem !important;
+    }
+    .mechanical-page h1 {
+        font-size: 2.2rem !important;
+    }
+    .portofolio-page h1 {
+        font-size: 2.2rem !important;
+    }
+    .profil-page h1 {
+        font-size: 2.2rem !important;
+    }
+    .residental-page h1 {
+        font-size: 2.2rem !important;
+    }
+    .space-page h1 {
+        font-size: 2.2rem !important;
+    } 
+    .isi1-page .fw-bold{
+        font-size: 4rem !important;
+    }
+    #menuhape{
+        display: none !important;
+    }
+    .butt{
+        display: none;
+    }
+    .api {
+        width: 53% !important;
+    }
+    .kelas2 .col-md-8 {
+        width: 50%;
+    }
+    .kelas2 {
+        position: relative;
+        left: 17%;
+    }
+    .kelas3 .col-md-8 {
+        width: 41%;
+    }
+    .kelas3 {
+        position: relative;
+        left: 20%;
+    }
+    .kelas4 .col-md-8 {
+        width: 47%;
+    }
+    .kelas4 {
+        position: relative;
+        left: 18% !important;
+    }
+    .kelas5 .col-md-8 {
+        width: 60%;
+    }
+    .kelas5 {
+        position: relative;
+        left: 5%;
+    }
+}
+
+
+/* 780 x 487 */
+@media(max-width:781px) {
+    .menu{
+        display: none;
+    }
+    .bungklus{
+        position: unset !important;
+    }
+    #menuhape{
+        display: block !important;
+    }
+    .butt{
+        display: block !important;
+    }
+    .fa-bars{
+        font-size: 1.5rem !important;
+    }
+    .home-section h1 {
+        font-size: 1.7rem;
+    }
+    .ohoh {
+        top: 16vh;
+        width: 15vh !important;
+        height: 7vh !important;
+        left: -12vh !important;
+        position: absolute;
+    }
+    .home-section .fab {
+        font-size: 25px !important;
+    }
+    .home-section .btn-danger {
+        width: 44px !important;
+        height: 44px !important;
+    }
+    .cs-section .fab {
+        font-size: 25px !important;
+    }
+    .cs-section .btn-danger {
+        width: 44px !important;
+        height: 44px !important;
+    }
+    .icon {
+        position: relative;
+        top: -14vh;
+    }
+    .bungklus .btn-danger {
+        height: 7.5vh !important;
+    }
+    .bulet {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .isi1-page .fw-bold {
+        font-size: 2.5rem !important;
+    }
+    .isi1-page .card2 {
+        width: 21% !important;
+    }
+    .fa-heart {
+        font-size: 21px !important;
+    }
+    .logo img {
+        width: 79px !important;
+        height: 57px !important;
+        margin-bottom: 0px;
+    }
+    .logo {
+        left: 26px !important;
+        margin-left: 15px;
+        width: 90px;
+        height: 90px;
+    }
+    .logoside {
+        width: 50vh !important;
+    }
+    .fa-x {
+        font-size: 1.5rem !important;
+    }
+    .home-section .bg-danger {
+        width: 100% !important;
+    }
+    .cs-section .bg-danger {
+        width: 100% !important;
+    }
+    .btn-light {
+        width: 95px !important;
+        font-size: 0.8rem !important;
+    }
+
+    .api{
+        display: none;
+    }
+    .kelas2 {
+        position: relative;
+        left: 1% !important;
+    }
+    .kelas3 {
+        position: relative;
+        left: 1% !important;
+    }
+    .kelas4 {
+        position: relative;
+        left: 1% !important;
+    }
+    .kelas5 {
+        position: relative;
+        left: 3% !important;
+    }
+    .kelas2 .col-md-8 {
+        width: 70% !important;
+    }
+    .kelas3 .col-md-8 {
+        width: 70% !important;
+    }
+    .kelas4 .col-md-8 {
+        width: 70% !important;
+    }
+    .kelas5 .col-md-8 {
+        width: 74% !important;
+    }
+    .isi1-page .fw-bold {
+        font-size: 3rem !important;
+    }
+    
+}
+
+@media(max-width:769px) {
+    .bulet {
+        width: 150px !important;
+        height: 150px !important;
+    } 
+}
+
+@media(max-width:668px) {
+    .kelas1 {
+        position: relative;
+        left: 5% !important;
+    }
+    .kelas5 {
+        position: relative;
+        left: 4%;
+    }
+    .home-section h1 {
+        font-size: 1.8rem;
+    }
+    .ohoh {
+        top: 15vh;
+        width: 16vh !important;
+        height: 8vh !important;
+        left: -26vh !important;
+        position: absolute;
+    }
+    .isi-index-page p {
+        font-size: 0.8rem !important;
+    }
+    .electric-page h1 {
+        font-size: 2rem !important;
+    }
+    .maintenance-page h1 {
+        font-size: 2rem !important;
+    }
+    .mechanical-page h1 {
+        font-size: 2rem !important;
+    }
+    .portofolio-page h1 {
+        font-size: 2rem !important;
+    }
+    .profil-page h1 {
+        font-size: 2rem !important;
+    }
+    .residental-page h1 {
+        font-size: 2rem !important;
+    }
+    .space-page h1 {
+        font-size: 2rem !important;
+    }
+    .logofoot {
+        width: 80px;
+        height: 80px;
+    }
+    .logofoot img {
+        width: 68px !important;
+        height: 48px !important;
+    }
+    #menuhape{
+        display: none !important;
+    }
+}
+
+@media(max-width:641px) {
+    .ohoh {
+        top: 15vh;
+        width: 15vh !important;
+        height: 8vh !important;
+        left: -29vh !important;
+        position: absolute;
+    }
+    .isi1-page .card2 {
+        width: 19% !important;
+    }
+    #menuhape{
+        display: block !important;
+    }
+    .butt{
+        display: block;
+    }
+}
+
+@media(max-width:451px) {
+    .menu{
+        display: none !important;
+    }
+    .home-section a {
+        font-size: 1rem !important;
+    }
+    .home-section h1 {
+        font-size: 1.5rem;
+    }
+    .ohoh {
+        top: 12vh;
+        width: 10vh !important;
+        height: 4vh !important;
+        left: -40vh !important;
+        position: absolute;
+    }
+    .home-section .fab {
+        font-size: 18px !important;
+    }
+    .home-section .btn-danger {
+        width: 38px !important;
+        height: 38px !important;
+    }
+    .cs-section .fab {
+        font-size: 18px !important;
+    }
+    .cs-section .btn-danger {
+        width: 38px !important;
+        height: 38px !important;
+    }
+    .home-section {
+        height: 100vh !important;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    .logo {
+        left: 26px !important;
+        margin-left: 15px;
+        width: 70px;
+        height: 70px;
+    }
+    .logo img {
+        width: 56px !important;
+        height: 44px !important;
+        margin-bottom: 0px;
+    }
+    .isi-index-page .fw-bold {
+        font-size: 1.5rem !important;
+    }
+    .isi-index-page p {
+        font-size: 0.7rem !important;
+    }
+    .bungklus .btn-danger {
+        height: 40px !important;
+        width: 123px !important;
+        /* align-items: center; */
+        margin-right: 115px;
+        margin-bottom: 10vh !important;
+    }
+    .bulet {
+        width: 95px !important;
+        height: 95px !important;
+    }
+    .kelas2 .col-md-8 {
+        width: 75%;
+    }
+    .kelas3 .col-md-8 {
+        width: 75%;
+    }
+    .kelas4 .col-md-8 {
+        width: 75%;
+    }
+    .kelas5 .col-md-8 {
+        width: 82%;
+    }
+    .kelas2 .col-md-8 {
+        width: 75%;
+    }
+    .kelas2 {
+        left: 3%;
+    }
+    .kelas3 {
+        left: 3%;
+    }
+    .kelas4 {
+        left: 3%;
+    }
+    .kelas5 {
+        left: 5%;
+    }
+    .isi1-page .fw-bold {
+        font-size: 2rem !important;
+        margin-left: 20px !important;
+        margin-bottom: -25px !important;
+    }
+    .isi1-page .card2 {
+        width: 20% !important;
+    }
+    .isi1-page .fa-heart{
+        font-size: 17px !important;
+    }
+    .footer-page h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .footer-page small {
+        font-size: 0.7rem !important;
+    }
+    .overlay-footer {
+        border-top-left-radius: 15px !important;
+        border-top-right-radius: 15px !important;
+    }
+    #menuhape{
+        display: block !important;
+    }
+    .butt{
+        display: block !important;
+    }
+    .custom-next{
+        display: none !important;
+    }
+    .custom-prev{
+        display: none !important;
+    }
+}
+
+@media(max-width:385px) {
+    .cs-section .btn-danger {
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .bungklus .btn-danger {
+        height: 35px !important;
+        width: 110px !important;
+        /* align-items: center; */
+        margin-right: 95px !important;
+        margin-bottom: 10vh !important;
+    }
+    .kelas5 {
+        left: 3%;
+    }
+    .electric-page h1 {
+        font-size: 1.5rem !important;
+    }
+    .maintenance-page h1 {
+        font-size: 1.5rem !important;
+    }
+    .mechanical-page h1 {
+        font-size: 1.5rem !important;
+    }
+    .portofolio-page h1 {
+        font-size: 1.5rem !important;
+    }
+    .profil-page h1 {
+        font-size: 1.5rem !important;
+    }
+    .residental-page h1 {
+        font-size: 1.5rem !important;
+    }
+    .space-page h1 {
+        font-size: 1.5rem !important;
+    }
+    .home-section h1 {
+        font-size: 1.2rem !important;
+    }
+    .electric-page p {
+        font-size: 0.8rem !important;
+    }
+    .maintenance-page p {
+        font-size: 0.8rem !important;
+    }
+    .mechanical-page p {
+        font-size: 0.8rem !important;
+    }    
+    .portofolio-page p {
+        font-size: 0.8rem !important;
+    }
+    .profil-page p {
+        font-size: 0.8rem !important;
+    }
+    .residental-page p {
+        font-size: 0.8rem !important;
+    }
+    .space-page p {
+        font-size: 0.8rem !important;
+    }
+    .call-page h1 {
+        font-size: 1.2rem !important;
+    }
+    .ohoh {
+        top: 12vh;
+        width: 10vh !important;
+        height: 4vh !important;
+        left: -39vh !important;
+        position: absolute;
+    }
+    .home-section .btn-danger {
+        width: 35px !important;
+        height: 35px !important;
+    }
+    .tek1 {
+        margin-left: 0 !important;
+        margin-right: 10px !important;
+    }
+}
+
+@media(max-width:376px) {
+}
+
+@media(max-width:321px) {
+    .home-section h1 {
+        font-size: 1rem !important;
+    }
+    .home-section .btn-danger {
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .ohoh {
+        top: 12vh;
+        width: 10vh !important;
+        height: 4vh !important;
+        left: -40vh !important;
+        position: absolute;
+    }
+    .isi-index-page .fw-bold {
+        font-size: 1.2rem !important;
+    }
+    .bungklus .btn-danger {
+        height: 35px !important;
+        width: 105px !important;
+        /* align-items: center; */
+        margin-right: 70px !important;
+        margin-bottom: 10vh !important;
+    }
+    .kelas2 {
+        left: 5% !important;
+    }
+    .kelas3 {
+        left: 5% !important;
+    }
+    .kelas4 {
+        left: 5% !important;
+    }
+    .kelas5 {
+        left: 5% !important;
+    }
+    .isi1-page .fw-bold {
+        font-size: 1.5rem !important;
+        margin-left: 20px !important;
+        margin-bottom: -25px !important;
+    }
+    .isi1-page .card-text{
+        font-size: 0.6rem !important;
+    }
+    .isi1-page .fa-heart {
+        font-size: 15px !important;
+    }
+    .isi1-page .card-title{
+        font-size: 1rem !important;
+    }
+    .isi1-page .card-title {
+        font-size: 0.8rem !important;
+    }
+    .footer-page small {
+        font-size: 0.6rem !important;
+    }
+    .footer-page h1 {
+        font-size: 1rem !important;
+    }
+    .call-page h1 {
+        font-size: 1rem !important;
+    }
+    .logo img {
+        width: 60px !important;
+        height: 44px !important;
+        margin-bottom: 0px;
+    }
+    .fa-bars {
+        font-size: 1rem !important;
+    }
+    .home-section .fab {
+        font-size: 15px !important;
+    }
+
+}
